@@ -47,7 +47,7 @@ import sklearn
 
 Did you install Python 2 or 3? Why?  
 
-I installed Python 3.7.1 for compatibility with HackerRank pre-work and future interoperability. 
+_I installed Python 3.7.1 for compatibility with HackerRank pre-work and future interoperability._ 
 
 ### Q2. Which Python Version Installed   
 
@@ -55,7 +55,7 @@ In the Terminal:
 
 `python3 --version`
 
-Python 3.7.1
+_Python 3.7.1_
 
  
 
