@@ -86,14 +86,27 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Solution:
+
+Solve for unconditional probailities first, assuming that distribution of gender among twins is what a naive person would expect (e.g., 1/4 of fraternal twins would be male-male, 1/4 female-female)
+
+p(identical & male twin) = p(identical) x p(both boys | identical twins) = 1/300 * 1/2 = 1/600
+
+p(fraternal & male twin) = p(fraternal) x p(both boys | fraternal twins) = 1/125 * 1/4 = 1/500
+
+P(identical male twins| male twin) = (p(identical male twins) x p(male twins | identical male twins)) / p(male twins)
+
+= (1/600 x 1) / (1/600 + 1/500)
+
+= There is a a 45.5% probability that Elvis was an identical twin
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Fundamentally, frequentist and Bayesian statistics differ with respect to their definition of what 'probability' means. Frequesntist statisticians regard probability as pertaining to the frequencies of repeated events. Bayesian statisticians regard probability as pertaining to their certainty or uncertainty of events. Frequentists focus on the variation of data and derived quantities in terms of fixed model parameters, while Bayesians focus on the variation in beliefs about model parameters in terms of fixed observed data. Thus, frequentists privilege the idea of the fixed model while Bayesians privilege observed data. Practically speaking, for simple statistical problems (e.g., those with few unknowns, where data are distributed normally) oftentimes the results of frequentist and Bayesian approaches are equivalent. However, the differences between frequentist and Bayesian approaches become more apparent in more complicated situations (e.g., when dealing with so-called 'nuisance parameters', the incorporation of prior information into models, defining 'uncertainty' in the model). Regarding 'nuisance parameters', frequentist approaches require that the parameter is fixed, while Bayesian approaches allow them to vary through marginalization. With respect to uncertainty, a frequentist might say "If this experiment is repeated many times, 95% of those times the computed confidence interval will contain the true value" while a Bayesian looking at the same problem would say "Given our observed data, there is a 95% probability that the value lies within the credible region." In the frequentist example, the model parameter is fixed while the confidence interval varies; in the Bayesian example the model parameter varies but the credible region is fixed.
+
 
 ---
 
